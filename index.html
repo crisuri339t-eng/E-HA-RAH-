@@ -8,59 +8,20 @@
 <title>E-HA-RAH | New Earth Enterprise</title>
 <style>
 *{box-sizing:border-box}
-body{
- margin:0;
- font-family:Arial,sans-serif;
- background:#0b1f3a;
- color:#f5f1e8;
- line-height:1.7;
-}
-header{
- text-align:center;
- padding:65px 20px;
- background:linear-gradient(145deg,#0b1f3a,#30134f);
-}
-h1{
- color:#d4af37;
- font-size:clamp(38px,8vw,65px);
- letter-spacing:5px;
- margin:0;
-}
-header p{font-size:19px}
-nav{
- text-align:center;
- padding:15px;
- background:#10182b;
- position:sticky;
- top:0;
-}
-nav a{
- color:#d4af37;
- text-decoration:none;
- margin:8px;
- display:inline-block;
-}
+body{margin:0;background:#0b1f3a;color:#f5f1e8;font-family:Arial,sans-serif;line-height:1.7}
+header{text-align:center;padding:65px 20px;background:linear-gradient(145deg,#0b1f3a,#30134f)}
+h1{color:#d4af37;font-size:clamp(40px,9vw,68px);letter-spacing:6px;margin:0}
+header p{font-size:18px}
+nav{text-align:center;background:#10182b;padding:15px;position:sticky;top:0;z-index:5}
+nav a{color:#d4af37;text-decoration:none;margin:8px;display:inline-block}
+button{background:#d4af37;color:#0b1f3a;border:0;border-radius:20px;padding:10px 18px;font-weight:bold;cursor:pointer;margin:4px}
 main{max-width:1000px;margin:auto;padding:25px}
-section{
- padding:30px 20px;
- margin:22px 0;
- background:#142b46;
- border:1px solid #8c702c;
- border-radius:14px;
-}
+section{padding:30px 20px;margin:22px 0;background:#142b46;border:1px solid #8c702c;border-radius:14px}
 h2{color:#d4af37}
-.card{
- padding:18px;
- margin:12px 0;
- background:#1b3654;
- border-radius:10px;
-}
-footer{
- text-align:center;
- padding:35px 15px;
- background:#10182b;
- color:#d4af37;
-}
+.card{padding:18px;margin:12px 0;background:#1b3654;border-radius:10px}
+footer{text-align:center;padding:35px;background:#10182b;color:#d4af37}
+.lang{display:none}
+.lang.active{display:inline}
 </style>
 </head>
 <body>
@@ -69,63 +30,76 @@ footer{
 <h1>E-HA-RAH</h1>
 <p>NEW EARTH ENTERPRISE</p>
 <p>We are E-HA-RAH. We are beloved.</p>
-<p>Innovación, conciencia y tecnología para un futuro mejor.</p>
+<p class="lang active" data-es="Innovación, conciencia y tecnología para un futuro mejor." data-en="Innovation, consciousness and technology for a better future.">Innovación, conciencia y tecnología para un futuro mejor.</p>
+<br>
+<button onclick="changeLang('es')">ESPAÑOL</button>
+<button onclick="changeLang('en')">ENGLISH</button>
 </header>
 
 <nav>
-<a href="#inicio">Inicio</a>
-<a href="#proyectos">Proyectos</a>
-<a href="#tecnologia">Tecnología</a>
-<a href="#naturaleza">Naturaleza</a>
-<a href="#vision">Nuestra visión</a>
+<a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+<a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+<a href="#tecnologia" data-es="Tecnología" data-en="Technology">Tecnología</a>
+<a href="#naturaleza" data-es="Naturaleza" data-en="Nature">Naturaleza</a>
+<a href="#vision" data-es="Visión" data-en="Vision">Visión</a>
 </nav>
 
 <main>
 
 <section id="inicio">
-<h2>Bienvenidos a E-HA-RAH</h2>
-<p>Un portal multidisciplinario dedicado a conectar proyectos, conocimiento, creatividad, inteligencia artificial, biotecnología e innovación para construir un futuro más humano y sostenible.</p>
-<p>Un espacio abierto a todas las personas, sin distinción de edad, origen o condición social.</p>
+<h2 data-es="Bienvenidos a E-HA-RAH" data-en="Welcome to E-HA-RAH">Bienvenidos a E-HA-RAH</h2>
+<p data-es="Un portal multidisciplinario que conecta proyectos, conocimiento, creatividad, inteligencia artificial, biotecnología e innovación para construir un futuro más humano y sostenible."
+data-en="A multidisciplinary portal connecting projects, knowledge, creativity, artificial intelligence, biotechnology and innovation to build a more humane and sustainable future.">Un portal multidisciplinario que conecta proyectos, conocimiento, creatividad, inteligencia artificial, biotecnología e innovación para construir un futuro más humano y sostenible.</p>
+<p data-es="Un espacio abierto a todas las personas, sin distinción de edad, origen o condición social."
+data-en="A space open to everyone, regardless of age, origin or social background.">Un espacio abierto a todas las personas, sin distinción de edad, origen o condición social.</p>
 </section>
 
 <section id="proyectos">
-<h2>Nuestras líneas de trabajo</h2>
+<h2 data-es="Nuestras líneas de trabajo" data-en="Our Areas of Work">Nuestras líneas de trabajo</h2>
 
 <div class="card">
-<h3>Inteligencia artificial</h3>
-<p>Investigación, desarrollo de herramientas inteligentes, educación, automatización y soluciones tecnológicas con supervisión humana.</p>
+<h3 data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</h3>
+<p data-es="Investigación, herramientas inteligentes, educación, automatización y soluciones tecnológicas con supervisión humana."
+data-en="Research, intelligent tools, education, automation and technological solutions under human supervision.">Investigación, herramientas inteligentes, educación, automatización y soluciones tecnológicas con supervisión humana.</p>
 </div>
 
 <div class="card">
-<h3>Biotecnología</h3>
-<p>Investigación responsable en alimentación, agricultura, materiales sostenibles, bienestar y recuperación ambiental.</p>
+<h3 data-es="Biotecnología" data-en="Biotechnology">Biotecnología</h3>
+<p data-es="Investigación responsable en alimentación, agricultura, materiales sostenibles, bienestar y recuperación ambiental."
+data-en="Responsible research in food, agriculture, sustainable materials, wellbeing and environmental restoration.">Investigación responsable en alimentación, agricultura, materiales sostenibles, bienestar y recuperación ambiental.</p>
 </div>
 
 <div class="card">
-<h3>Innovación empresarial</h3>
-<p>Soluciones para auditoría, ciberseguridad defensiva, análisis de riesgos y protección de operaciones.</p>
+<h3 data-es="Innovación empresarial" data-en="Business Innovation">Innovación empresarial</h3>
+<p data-es="Soluciones para auditoría, ciberseguridad defensiva, análisis de riesgos y protección de operaciones."
+data-en="Solutions for auditing, defensive cybersecurity, risk analysis and operational protection.">Soluciones para auditoría, ciberseguridad defensiva, análisis de riesgos y protección de operaciones.</p>
 </div>
 
 <div class="card">
-<h3>Bienestar y cultura</h3>
-<p>Espacios de aprendizaje, creatividad, prácticas culturales, reflexión y desarrollo personal desde el respeto y la libertad.</p>
+<h3 data-es="Bienestar y cultura" data-en="Wellbeing and Culture">Bienestar y cultura</h3>
+<p data-es="Espacios de aprendizaje, creatividad, prácticas culturales, reflexión y desarrollo personal desde el respeto y la libertad."
+data-en="Spaces for learning, creativity, cultural practices, reflection and personal development based on respect and freedom.">Espacios de aprendizaje, creatividad, prácticas culturales, reflexión y desarrollo personal desde el respeto y la libertad.</p>
 </div>
 </section>
 
 <section id="tecnologia">
-<h2>Tecnología para la humanidad</h2>
-<p>Creemos que la inteligencia artificial y la biotecnología pueden convertirse en herramientas para mejorar la educación, la investigación, la accesibilidad y la calidad de vida.</p>
+<h2 data-es="Tecnología para la humanidad" data-en="Technology for Humanity">Tecnología para la humanidad</h2>
+<p data-es="Creemos que la inteligencia artificial y la biotecnología pueden mejorar la educación, la investigación, la accesibilidad y la calidad de vida."
+data-en="We believe artificial intelligence and biotechnology can improve education, research, accessibility and quality of life.">Creemos que la inteligencia artificial y la biotecnología pueden mejorar la educación, la investigación, la accesibilidad y la calidad de vida.</p>
 </section>
 
 <section id="naturaleza">
-<h2>La vida y la Tierra</h2>
-<p>Trabajamos desde una visión de respeto por los animales, protección de los ecosistemas, reducción de residuos y recuperación de nuestro entorno natural.</p>
+<h2 data-es="La vida y la Tierra" data-en="Life and Earth">La vida y la Tierra</h2>
+<p data-es="Respeto por los animales, protección de los ecosistemas, reducción de residuos y recuperación de nuestro entorno natural."
+data-en="Respect for animals, ecosystem protection, waste reduction and restoration of our natural environment.">Respeto por los animales, protección de los ecosistemas, reducción de residuos y recuperación de nuestro entorno natural.</p>
 </section>
 
 <section id="vision">
-<h2>Nueva Tierra</h2>
-<p>Imaginamos un futuro donde la tecnología esté al servicio de la vida, la educación despierte la creatividad y la innovación contribuya al bienestar colectivo.</p>
-<p>Sin dogmas, sin imposiciones y con respeto por todas las formas de vida.</p>
+<h2 data-es="Nueva Tierra" data-en="New Earth">Nueva Tierra</h2>
+<p data-es="Imaginamos un futuro donde la tecnología esté al servicio de la vida, la educación despierte la creatividad y la innovación contribuya al bienestar colectivo."
+data-en="We envision a future where technology serves life, education awakens creativity and innovation contributes to collective wellbeing.">Imaginamos un futuro donde la tecnología esté al servicio de la vida, la educación despierte la creatividad y la innovación contribuya al bienestar colectivo.</p>
+<p data-es="Sin dogmas, sin imposiciones y con respeto por todas las formas de vida."
+data-en="Without dogma, without imposition, and with respect for all forms of life.">Sin dogmas, sin imposiciones y con respeto por todas las formas de vida.</p>
 <h3 style="color:#d4af37">WE ARE BELOVED.</h3>
 </section>
 
@@ -133,9 +107,19 @@ footer{
 
 <footer>
 <p>E-HA-RAH | NEW EARTH ENTERPRISE</p>
-<p>Innovación • Conciencia • Tecnología • Vida</p>
-<p>Construyendo posibilidades para un futuro mejor.</p>
+<p>Innovation • Consciousness • Technology • Life</p>
+<p>WE ARE BELOVED.</p>
 </footer>
+
+<script>
+function changeLang(lang){
+document.documentElement.lang=lang;
+document.querySelectorAll('[data-es]').forEach(el=>{
+el.textContent=el.getAttribute('data-'+lang);
+});
+}
+</script>
 
 </body>
 </html>
+
