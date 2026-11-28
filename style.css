@@ -311,3 +311,72 @@ footer p {
     font-size: 1.5rem;
   }
 }
+
+/* E-HA-RAH — Project Cards */
+
+.eh-projects {
+  padding: 80px 20px;
+  background: #0B1F3A;
+  color: #F5F0E5;
+  text-align: center;
+}
+
+.eh-projects h2 {
+  color: #D4AF37;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+
+.eh-projects > .container > p {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.eh-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eh-project-card {
+  background: linear-gradient(145deg, #142F50, #0B1F3A);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: 12px;
+  padding: 28px 22px;
+  text-align: left;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.eh-project-card:hover {
+  transform: translateY(-5px);
+  border-color: #D4AF37;
+}
+
+.eh-project-card h3 {
+  color: #F4D987;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.eh-project-card p {
+  color: #E2E7EF;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 650px) {
+  .eh-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .eh-projects {
+    padding: 55px 16px;
+  }
+
+  .eh-project-card {
+    padding: 24px 20px;
+  }
+}
