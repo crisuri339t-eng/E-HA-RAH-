@@ -380,3 +380,23 @@ footer p {
     padding: 24px 20px;
   }
 }
+
+/* E-HA-RAH — Project Numbering */
+
+.eh-project-card > span {
+  display: inline-block;
+  color: #D4AF37;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.eh-project-card h3 {
+  line-height: 1.4;
+}
+
+.eh-project-card {
+  min-height: 210px;
+}
+
