@@ -89,3 +89,4 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 console.log("E-HA-RAH | NEW EARTH ENTERPRISE");
 console.log("Technology • Nature • Consciousness • Innovation");
 console.log("Bilingual system activated.");
+alert("E-HA-RAH: JavaScript está funcionando");
